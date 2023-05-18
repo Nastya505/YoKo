@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!----GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!---BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="./shop-solid.svg" type="image/x-icon">
+    <title>YoKo</title>
+  </head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">YoKo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav sm-auto mb-2 mb-lg-0 top-menu">
+            <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">Catalog</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">Contacts</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Registration</a></li>
+                <li><a class="dropdown-item" href="#">Authorization</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"  href="#" data-bs-toggle="modal" data-bs-target="#modal-cart"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+            <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"  style="color: #ffffff;">Shopping cart</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="color: #ffffff;">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                    <td><img src="./img/t-shirt.jpg" alt="t-shirt"></td>
+                                    <td><a href="#">Anime t-shirt</a></td>
+                                    <td>$50</td>
+                                    <td>1</td>
+                                    </tr>
+                                
+                                    <tr>
+                                    <td><img src="./img/dress.jpg" alt="dress"></td>
+                                    <td><a href="#">Anime costume</a></td>
+                                    <td>$90</td>
+                                    <td>1</td>
+                                    </tr>
+                                
+                                    <tr>
+                                    <td><img src="./img/kimono.jpg" alt="kimono"></td>
+                                    <td><a href="#">Kimono</a></td>
+                                    <td>$120</td>
+                                    <td>1</td>
+                                    </tr>
+                                
+                                </tbody>
+                                </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Сheckout</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"  href="#"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
+        </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+<div id="scrollspyHeading1" class="container-fluid my-slider">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="./img/slider1.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="./img/slider2.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="./img/slider3.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+</div>
+
+<section id="scrollspyHeading2" class="main-content">
+    <div class="container">
+        <div class="main-title">Catalog</div>
+        <div class="row mt-5">
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <a href="#"><img src="./img/dress.jpg" alt="dress"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="#">Anime costume</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, architecto.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                <small>$210.99</small> 90$
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000;"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart" style="color:  #c11f40;"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6  mb-3">
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <a href="#"><img src="./img/costume3.jpg" alt="dress"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="#">Anime costume</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, architecto.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                <small>$210.99</small> 90$
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000;"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart" style="color:  #c11f40;"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6  mb-3">
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <a href="#"><img src="./img/costume2.jpg" alt="dress"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="#">Anime costume</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, architecto.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                <small>$270.99</small> 132$
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000;"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart" style="color:  #c11f40;"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6  mb-3">
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <a href="#"><img src="./img/kimono.jpg" alt="kimono"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="#">Kimono</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, architecto.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                <small>$430.89</small> 120$
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000;"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart" style="color:  #c11f40;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6  mb-3">
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <a href="#"><img src="./img/kimono1.jpeg" alt="kimono"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="#">Kimono</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, architecto.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                <small>$730.89</small> 130$
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000;"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart" style="color:  #c11f40;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6  mb-3">
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <a href="#"><img src="./img/kimono2.jpg" alt="kimono"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="#">Anime costume</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, architecto.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                <small>$230.89</small> 65$
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000;"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart" style="color:  #c11f40;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6  mb-3">
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <a href="#"><img src="./img/t-shirt3.jpeg" alt="kimono"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="#">Anime t-shirt</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, architecto.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                <small>$240.89</small> 105$
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000;"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart" style="color:  #c11f40;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6  mb-3">
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <a href="#"><img src="./img/t-shirt2.jpg" alt="kimono"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="#">Anime t-shirt</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, architecto.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                <small>$230.89</small> 55$
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000;"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart" style="color:  #c11f40;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6  mb-3">
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <a href="#"><img src="./img/t-shirt.jpg" alt="kimono"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="#">Anime t-shirt</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, architecto.</p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                <small>$130.89</small> 35$
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000;"></i></a>
+                                <a href="#"><i class="fa-regular fa-heart" style="color:  #c11f40;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="scrollspyHeading3" class="bg-dark pt-5" data-bs-theme="dark">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h5 style="color:#ffffff">YoKo</h5>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4>Information</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About store</a></li>
+                        <li><a href="#">Payment and delivery</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4>Contacts</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="tel:65634534567">+7 656 345-36-67</a></li>
+                        <li><a href="tel:18634534567">+7 186 345-36-67</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <h4>Social network</h4>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!--SCRIPT BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!--FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/f13d515fed.js" crossorigin="anonymous"></script>
+</body>
+</html>
